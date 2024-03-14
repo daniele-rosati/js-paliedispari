@@ -25,7 +25,8 @@ function isEven(number){
 
 // 3- funzione che ci permette di vedere se la parola inserita dall'utente è palidroma 
 function isPalindrome(word){
-    
+    // ciclo che permette di verificare la lunghezza della parola e che se è più lunga della parola inserita allora non è polidroma 
+    // se invece hanno la stessa lunghezza sono la stessa parola è polidroma
     for (let i = 0; i < word.lenght; i++){
         if (word[i] !== word[word.lenght - 1 - i]) {
             return false;
