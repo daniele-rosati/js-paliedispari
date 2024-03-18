@@ -41,8 +41,9 @@ function playEvenorUneven(){
     const userNumber = parseInt (prompt("Inserisci un numero da 1 a 5: "));
     const computerNumber = generateCasualNumber();
     const sum = userNumber + computerNumber;
+    
     // per questa la const result ho cercato qui https://www.html.it/pag/15220/operatori1/
-    const result = isPari(sum) ? "pari" : "dispari";
+    const result = isEven(sum) ? "pari" : "dispari";
 
     alert ("il numero scelto dal computer è ${computerNumber}. La somma è ${sum}, il ${result} è: ");
 
